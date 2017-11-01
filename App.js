@@ -1,35 +1,16 @@
-'use strict'
-import React, { Component } from 'react';
-import { Text, View, APPregistry } from 'react-native';
-import ViewContainer from './components/ViewContainer'
+import React, {Component} from 'react';
+import {AppRegistry, Text, View} from 'react-native';
 
-class abcrn extends Component {
-  render() {
+import Component1 from './app/components/Component1/Component1';
+
+export default class myapp extends Component{
+  render(){
     return(
-    <ViewContainer>
-    <Text>{'Hello from Inside ViewContainer'}</Text>
-    </ViewContainer>
-    )
+      <View>
+        <Component1 />
+      </View>
+    );
   }
 }
 
-const styles = React.StyleSheet.create({
-  conatiner: {
-    flex: 1
-    justifyContent: 'center',
-    alignItems: 'center'
-    backgroundColor: '#F5FCFF',
-  },
-welcome: {
-  fontSize: 20,
-  textAlign: 'center',
-  margin: 10,
-},
-instructions: {
-  textAlign: 'center'
-  color: '#333333',
-  marginBottom: 5,
-},
-});
-
-AppRegistry.registerComponent('abcrn', ()=>abcrn)
+AppRegistry.registerComponent('myapp', () => MyApp);
