@@ -52,6 +52,7 @@ buck-out/
 */fastlane/Preview.html
 */fastlane/screenshots
 
+React-Native
 #############
 .babelrc
 .buckconfig
@@ -67,3 +68,4 @@ __tests__
 _tests_
 android
 ios
+jsconfig.json
