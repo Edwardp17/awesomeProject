@@ -5,9 +5,10 @@ import Component1 from './app/components/Component1/Component1';
 
 export default class myapp extends Component{
   render(){
+    console.log('HELLO');
     return(
       <View>
-        <Component1 message='Hello World'/>
+        <Component1/>
       </View>
     );
   }
