@@ -55,6 +55,6 @@ const styles = StyleSheet.create({
     vText: {
         color:'white'
     }
-})
+});
 
 AppRegistry.registerComponent('Component2', () => MyApp);
