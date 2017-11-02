@@ -1,22 +1,41 @@
 import React, {Component} from 'react';
-import {AppRegistry, Text, View, StyleSheet} from 'react-native';
+import {AppRegistry, Text, View, StyleSheet, TouchableHighlight, TouchableOpacity} from 'react-native';
 
 
 
 export default class Component2 extends Component{
-  render(){
+    onPress(){
+        console.log('Area Pressed');
+    }
+
+    onPress2(){
+        console.log('Area1 Pressed');
+    }
+  
+    render(){
     return(
         <View>
             <View style={styles.myView}>
                 <Text style={styles.myText}>Hello Brad</Text>
                 </View>
                 <View style={styles.container}>
-                    <View style={styles.v1}>
-                        <Text>View 1</Text>
-                    </View>
-                    <View style={styles.v2}>
-                        <Text>View 2</Text>
-                    </View>
+                    <TouchableHighlight 
+                        style={styles.v1} 
+                        onPress={this.onPress}
+                        underlayColor='blue'
+                        >
+                        <View>
+                            <Text>View 1</Text>
+                        </View>
+                    </TouchableHighlight>
+                    <TouchableOpacity
+                    style={styles.v2}
+                    onPress={this.onPress2}
+                    >
+                        <View>
+                            <Text>View 2</Text>
+                        </View>
+                    </TouchableOpacity>
                     <View style={styles.v3}>
                         <Text style={styles.vText}>View 3</Text>
                     </View>
